@@ -1,0 +1,48 @@
+.authenticated-layout {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main-content {
+    display: flex;
+  }
+  
+  .content-area {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+  }
+  
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    z-index: 1000;
+  }
+  
+  .hamburger-menu {
+    display: none;
+  }
+  
+  /* Media query for mobile */
+  @media (max-width: 768px) {
+    .sidebar {
+      display: none; /* Hide the sidebar on small screens */
+    }
+    .hamburger-menu {
+      display: block; /* Show hamburger menu */
+    }
+  }
+  
